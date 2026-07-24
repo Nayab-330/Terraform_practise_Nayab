@@ -1,0 +1,6 @@
+cidr_block = "10.0.0.0/16"
+cidr_block_2 = "10.0.0.0/24"
+subnet_1 = "10.0.0.0/24"
+tag = "my-vpc"
+tag2 = "my-vpc-2"
+tag_subnet = "my-subnet"  
