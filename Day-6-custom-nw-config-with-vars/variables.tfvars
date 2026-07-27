@@ -1,0 +1,12 @@
+aws_vpc_cidr = "10.0.0.0/16"
+aws_vpc_name = "dev_vpc_terraform"
+aws_subnet_cidr = "10.0.0.0/24"
+aws_subnet_az = "us-east-1a"
+aws_subnet_name = "dev_subnet_terraform"
+aws_internet_gateway_name = "dev_igw_terraform"
+aws_rt_name = "dev_rt_terraform"
+aws_rt_cidr_block = "0.0.0.0/0"
+aws_rt_gateway_id = "aws_internet_gateway.dev_igw.id"
+aws_route_table_association_subnet_id = "aws_subnet.dev_subnet.id"
+aws_subnet_association_route_table_id = "aws_route_table.dev_route_table.id"
+##added variables for few resources in tfvars file.
