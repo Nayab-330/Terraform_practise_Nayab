@@ -1,0 +1,23 @@
+node {
+    stage('git clone') {
+        git branch: 'main',
+                    credentialsId: '3a6619f1-a695-483a-8b26-dd02b8e22ee1',
+                    url: 'https://github.com/Nayab-330/Terraform_practise_Nayab.git'
+    }
+    stage('terraform init') {
+        dir('Day-2-terraform-configurations') {
+                    sh 'terraform init'
+        }
+    }
+  
+    stage('terraform plan') {
+        dir('Day-2-terraform-configurations') {
+                    sh 'terraform plan'
+    }
+    }
+        stage('terraform appply -auto-apprve') {
+        dir('Day-2-terraform-configurations') {
+                    sh 'terraform apply -auto-approve'
+    }
+  }
+}
